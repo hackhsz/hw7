@@ -72,11 +72,8 @@ def get_user_tweets(handle):
 		f.close()
 	tweet_texts = []	
 	datareturn=[]
-	for i in range(len(twitter_results["statuses"])):
-		
-		tweet=twitter_results["statuses"][i]
-		datareturn.append(tweet)
-	return datareturn
+	
+	return twitter_results
 	#for tweet in twitter_results["statuses"]:
 
 
